@@ -52,4 +52,21 @@ button:active{
 }
 .operator-btn:active{
     background-color: hsl(35, 100%, 75%);
+
+}
+/* عندما تكون الشاشة أصغر من 600 بكسل (مثل الموبايل) */
+@media screen and (max-width: 600px) {
+    .calculator {
+        width: 95%; /* تكبير الآلة لتأخذ معظم عرض الشاشة */
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1.5rem; /* تكبير حجم الخط للأزرار لسهولة اللمس */
+        height: 60px;      /* زيادة ارتفاع الزر */
+    }
+
+    .display {
+        font-size: 2rem;   /* تكبير خط الأرقام الظاهرة */
+    }
 }
